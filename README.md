@@ -40,7 +40,7 @@
 ## 🏗️ **Getting Started**
 
 - **Clone the Repository**
-- git clone https://github.com/your-username/furnii.git
+- git clone [Project](https://github.com/SandeepaLakruwan/Java_Hibernate_E_Commerce_Website.git)
 - cd furnii
 
 - Set Up the Database
