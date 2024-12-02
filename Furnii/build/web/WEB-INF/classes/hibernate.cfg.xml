@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/furnii?useSSL=false</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">{password}</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <mapping class="entity.User"/>
+        <mapping class="entity.Cart"/>
+        <mapping class="entity.Color"/>
+        <mapping class="entity.Product"/>
+        <mapping class="entity.Product_Category"/>
+        <mapping class="entity.Product_Condition"/>
+        <mapping class="entity.Product_Status"/>
+        <mapping class="entity.City"/>
+        <mapping class="entity.Address"/>
+        <mapping class="entity.Orders"/>
+        <mapping class="entity.OrderStatus"/>
+        <mapping class="entity.OrderItem"/>
+        
+    </session-factory>
+</hibernate-configuration>

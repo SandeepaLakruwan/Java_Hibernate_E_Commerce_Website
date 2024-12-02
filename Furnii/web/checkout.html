@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <!-- molla/checkout.html  22 Nov 2019 09:55:06 GMT -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Molla - Bootstrap eCommerce Template</title>
+        <meta name="keywords" content="HTML5 Template">
+        <meta name="description" content="Molla - Bootstrap eCommerce Template">
+        <meta name="author" content="p-themes">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16x16.png">
+        <link rel="manifest" href="assets/images/icons/site.html">
+        <link rel="mask-icon" href="assets/images/icons/safari-pinned-tab.svg" color="#666666">
+        <link rel="shortcut icon" href="assets/images/icons/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="Molla">
+        <meta name="application-name" content="Molla">
+        <meta name="msapplication-TileColor" content="#cc9966">
+        <meta name="msapplication-config" content="assets/images/icons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Plugins CSS File -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Main CSS File -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="project-assets/css/notification.css">
+    </head>
+
+    <body onload="loadData();">
+        <div class="page-wrapper">
+
+            <main class="main">
+                <div class="page-header text-center" style="background-image: url('assets/images/page-header-bg.jpg')">
+                    <div class="container">
+                        <h1 class="page-title">Checkout<span>Furnii</span></h1>
+                    </div><!-- End .container -->
+                </div><!-- End .page-header -->
+                <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="cart.html">Cart</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                        </ol>
+                    </div><!-- End .container -->
+                </nav><!-- End .breadcrumb-nav -->
+
+                <div class="page-content">
+                    <div class="checkout">
+                        <div class="container">
+
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <h2 class="checkout-title">Billing Details</h2><!-- End .checkout-title -->
+
+                                        <div class="form-group input-group">
+                                            <input type="checkbox" id="checkbox1" class="m-2 ml-2">
+                                            <label for="checkbox1">Same as your current address?</label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>First Name *</label>
+                                                <input id="first-name" type="text" class="form-control" required>
+                                            </div><!-- End .col-sm-6 -->
+
+                                            <div class="col-sm-6">
+                                                <label>Last Name *</label>
+                                                <input id="last-name" type="text" class="form-control" required>
+                                            </div><!-- End .col-sm-6 -->
+                                        </div><!-- End .row -->
+
+                                        <label>Street address *</label>
+                                        <input id="address1" type="text" class="form-control" placeholder="House number and Street name" required>
+                                        <input id="address2" type="text" class="form-control" placeholder="Appartments, suite, unit etc ..." required>
+
+                                        <div class="row">
+
+                                            <div class="form-group col-sm-12">
+                                                <label>Town / City <span>*</span></label>
+                                                <select id="city" class="form-control">
+                                                    <option value="0">Select</option>
+
+                                                </select>
+                                            </div>
+
+                                        </div><!-- End .row -->
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>Postcode / ZIP *</label>
+                                                <input id="postal-code" type="text" class="form-control" required>
+                                            </div><!-- End .col-sm-6 -->
+
+                                            <div class="col-sm-6">
+                                                <label>Mobile *</label>
+                                                <input id="mobile" type="tel" class="form-control" required>
+                                            </div><!-- End .col-sm-6 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .col-lg-9 -->
+                                    <aside class="col-lg-3">
+                                        <div class="summary">
+                                            <h3 class="summary-title">Your Order</h3><!-- End .summary-title -->
+
+                                            <table class="table table-summary">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product</th>
+                                                        <th>Total</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody id="st-tbody">
+                                                    <tr id="st-item-tr">
+                                                        <td><span id="st-item-title"></span> x<span id="st-item-qty"></span></td>
+                                                        <td id="st-item-subtotal">$84.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="table table-summary">
+                                                <tbody>
+                                                    <tr class="summary-subtotal">
+                                                        <td>Subtotal:</td>
+                                                        <td id="st-order-subtotal">$160.00</td>
+                                                    </tr><!-- End .summary-subtotal -->
+                                                    <tr>
+                                                        <td>Shipping:</td>
+                                                        <td id="st-order-shipping">Free shipping</td>
+                                                    </tr>
+                                                    <tr class="summary-total">
+                                                        <td>Total:</td>
+                                                        <td id="st-order-total">$160.00</td>
+                                                    </tr><!-- End .summary-total -->
+                                                </tbody>
+                                            </table><!-- End .table table-summary -->
+
+                                            <div class="accordion-summary" id="accordion-payment">
+                                                
+                                                <div class="card">
+                                                    <div class="card-header" id="heading-5">
+                                                        <h2 class="card-title">
+                                                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                                                                Credit Card / Debit Card
+                                                                <img src="assets/images/payments-summary.png" alt="payments cards">
+                                                            </a>
+                                                        </h2>
+                                                    </div><!-- End .card-header -->
+                                                    <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordion-payment">
+                                                        <div class="card-body"> Donec nec justo eget felis facilisis fermentum.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Lorem ipsum dolor sit ame.
+                                                        </div><!-- End .card-body -->
+                                                    </div><!-- End .collapse -->
+                                                </div><!-- End .card -->
+                                            </div><!-- End .accordion -->
+
+                                            <button type="button" onclick="checkout();" class="btn btn-outline-primary-2 btn-order btn-block">
+                                                <span class="btn-text">Place Order</span>
+                                                <span class="btn-hover-text">Proceed to Checkout</span>
+                                            </button>
+                                        </div><!-- End .summary -->
+                                    </aside><!-- End .col-lg-3 -->
+                                </div><!-- End .row -->
+                            </form>
+                        </div><!-- End .container -->
+                    </div><!-- End .checkout -->
+                </div><!-- End .page-content -->
+            </main><!-- End .main -->
+
+
+        </div><!-- End .page-wrapper -->
+        <button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
+
+
+        <!-- Plugins JS File -->
+        
+        
+        
+         
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/jquery.hoverIntent.min.js"></script>
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+        <script src="assets/js/superfish.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        
+        <!-- Main JS File -->
+        <script src="assets/js/main.js"></script>
+        
+        <script type="text/javascript" src="https://www.payhere.lk/lib/payhere.js"></script>
+         <script src="project-assets/js/checkout.js"></script>
+        
+        <script src="project-assets/js/notification.js"></script>
+    </body>
+
+
+    <!-- molla/checkout.html  22 Nov 2019 09:55:06 GMT -->
+</html>

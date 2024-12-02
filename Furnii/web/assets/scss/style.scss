@@ -1,0 +1,210 @@
+/* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+
+/* ===================================== Import Variables ================================== */
+@import 'variable';
+/* ===================================== Basic CSS ==================================== */
+@import 'base/basic_setup';
+
+/* ===================================== Login Page Design CSS ==================================== */
+
+
+
+.form-login-body{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    @media screen and (max-width: 991px){
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @media screen and (max-width:480px){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .login-desk{
+      filter: drop-shadow(0 0 13.5px rgba(0, 0, 0, 0.09));
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .detail-box{
+           background-color: #f3f4f8;
+            padding: 20px;
+            .logo{
+                width: 130px;
+            }
+            .help{
+                width: 450px;
+                margin-top: 30px;
+                margin-bottom: 50px;
+            }
+            .detailsh{
+                text-align: center;
+                h3{
+                    font-size: 1.2rem;
+                    margin-bottom: 15px;
+                }
+                p{
+                   font-size: .8rem; 
+                }
+            }
+        }
+        .loginform{
+            background-color: #fff;
+            text-align: center;
+            color: #FFF;
+            a{
+                color: #FFF;
+            }
+            h4{
+                color: #FFF;
+                font-size: 1.3rem;
+            }
+            p{
+                font-size: .8rem;
+                margin-bottom: 50px;
+            }
+            padding: 0px;
+            .login-det{
+                padding: 30px;
+                padding-bottom: 80px;
+                img{
+                    margin-top: -70px;
+                }
+                
+                .form-row{
+                    margin-top: 20px;
+                    label{
+                        font-size: .85rem;
+                    }
+                    
+                }
+                .input-group{
+                    .input-group-prepend{
+                       
+                        .input-group-text{
+                             background-color: #3d46a7;
+                            color: #ffffffcf;
+                            border-right: 0px;
+                            border: 0px;
+                        }
+                    }
+                    .form-control{
+                        background-color: #3d46a7;
+                        color: #FFF;
+                        border-left: 0px;
+                        border: 0px;
+                    }
+                    .form-control:focus{
+                        border: 0px;
+                    }
+                }
+                .btn-danger{
+                    width: 100%;
+                    border-radius: 0px;
+                    background-color: #fa607e;
+                    border-radius: 50px;
+                }
+            }
+            .forget{
+                text-align: right;
+            }
+            .social-link{
+                ul{
+                    float: right;
+                    margin-top: 30px;
+                    li{
+                        float: left;
+                        padding: 15px;
+                        font-size: .9rem;
+                    }
+                }
+            }
+            .log-txt{
+                background-color: #066aff;
+                padding: 40px;
+                padding-bottom: 90px;
+                h2{
+                    text-align: left;
+                    color: #FFF;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    line-height: 25px;
+                }
+                p{
+                    text-align: left;
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                   
+                }
+                .btn{
+                     border-radius: 50px;
+                    padding-right: 30px;
+                    padding-left: 30px;
+                    font-size: .85rem;
+                }
+            }
+        }
+    }
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  //color: #FFF !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  //color: #FFF !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  //color: #FFF !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  //color:#FFF !important;
+}
+.detailsh{
+    text-align: center;
+    padding-top: 65px;
+    img{
+        margin-bottom: 32px;
+        max-width: 90px;
+    }
+    .form-ro{
+        input{
+            background-color: #FFF;
+            border-radius: 0px;
+        }
+    }
+    .fgbh{
+        a{
+            font-size: .8rem;
+            padding-top: 5px;
+        }
+        .btn{
+            border-radius: 50px;
+            padding-right: 15px;
+            padding-left: 15px;
+            float: right;
+        }
+    }
+    .hlio{
+        padding-top: 20px;
+        margin-top: 20px;
+        border-top: 1px solid #CCC;
+        .btn{
+            box-shadow: none;
+        }
+        a{
+            font-weight: 600;
+            color: #007bff;
+        }
+    }
+}
+
+
+
+
+/* ===================================== Responsive Style CSS ==================================== */
+
+@import 'response/responsive';
