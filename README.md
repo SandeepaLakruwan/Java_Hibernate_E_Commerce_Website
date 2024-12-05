@@ -3,7 +3,11 @@
 **Furnii** is a furniture-focused e-commerce web application designed for both buyers and sellers. It combines a pre-designed frontend template with a custom-built backend to provide a seamless user experience for furniture shopping and management. This project utilizes **Java**, **Hibernate**, **MySQL**, **JavaScript**, and a free **Molla eCommerce HTML template** for the frontend.
 
 ---
+# 🌐 Demo
 
+Watch the demo on YouTube: https://youtu.be/RbrO3GQXhpQ
+
+---
 ## 🎯 **Features**
 
 ### **User Roles:**
